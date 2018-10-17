@@ -1,6 +1,7 @@
 /* global jQuery */
 /* global document */
 
+
 jQuery(function() {
   'use strict';
 

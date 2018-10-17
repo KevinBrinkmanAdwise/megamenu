@@ -34,8 +34,6 @@ Mobile Sub Menu Expander Arrows
 Extra @Media Query
 ===============================================================================*/
 /* ================== Desktop Base CSS  ================== */
-
-
 .wsmenu html, .wsmenu body, .wsmenu iframe, .wsmenu h1, .wsmenu h2, .wsmenu h3, .wsmenu h4, .wsmenu h5, .wsmenu h6 {
   margin: 0;
   padding: 0;
@@ -142,8 +140,7 @@ Extra @Media Query
   text-align: left;
   padding: 0 24px 0 24px;
   margin: 0px;
-  color:black;
-
+  color: black;
 }
 
 .wsmenu>.wsmenu-list>li>a {
@@ -198,7 +195,7 @@ Extra @Media Query
   width: 35%;
   float: right;
   padding-left: 15px;
-  right:0px;
+  right: 0px;
   margin-top: 5px;
 }
 
@@ -1184,7 +1181,6 @@ Extra @Media Query
 
   .wsmenu>.wsmenu-list>li>.navtext {
     padding-left: 18px;
-
   }
 
   .wsmenu>.wsmenu-list>li.wscarticon a {
@@ -1472,7 +1468,7 @@ Extra @Media Query
     left: 0;
     z-index: 10002;
     height: 60px;
-    background-color: #eaecf0;
+    background-color: white;
     text-align: center;
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
@@ -1738,7 +1734,7 @@ Extra @Media Query
     display: block;
     height: 23px;
     width: 25px;
-    margin-top: 30px;
+    margin-top: 25px;
     margin-right: 13px;
     background-size: 25px;
     font-size: 21px;
@@ -1826,76 +1822,85 @@ Extra @Media Query
 }
 
 /*==========  Non-Mobile First Method  ==========*/
-.search-input{
-  float:right!important;
-  width:30%;
-  margin-top:20px!important;
-}
-.input-group-text{
-  background-color:#e1007c;
-  color:white;
-  float:right;
+.search-input {
+  float: right !important;
+  width: 30%;
+  margin-top: 20px !important;
 }
 
-.form-control{
+.input-group-text {
+  background-color: #e1007c;
+  color: white;
+  float: right;
+}
+
+.form-control {
   border: 1px solid #e1007c;
 }
-    /* Large Devices, Wide Screens */
-    @media only screen and (max-width : 1200px) {
-      .search-input{
-        float:right!important;
-        width:20%;
-        margin-top:20px!important;
-        margin-right:10px!important;
-      }
 
-    }
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+  .search-input {
+    float: right !important;
+    width: 20%;
+    margin-top: 20px !important;
+    margin-right: 10px !important;
+  }
+}
 
-    /* Medium Devices, Desktops */
-    @media only screen and (max-width : 992px) {
-      .smllogo {
-        width: 20%;
-      }
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  .smllogo {
+    width: 20%;
+  }
 
-      .wsmenu {
-        width: 100%
-      }
-    }
+  .wsmenu {
+    width: 100%
+  }
+}
 
-    /* Small Devices, Tablets */
-    @media only screen and (max-width : 768px) {
-      .headerfull{
-      height:auto;
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  .headerfull {
+    height: auto;
+  }
 
-      }
-    }
+  .wsmenu>.wsmenu-list>li.normal-item>a {
+    line-height: 60px;
+  }
 
-    /* Extra Small Devices, Phones */
-    @media only screen and (max-width : 480px) {
+  .wsmenu>.wsmenu-list>li>a{
+    border: 0.5px solid #efefef;
+  }
 
-    }
+  .wsmenu>.wsmenu-list>li>.navtext {
+    line-height: 60px;
+  }
+
+  .wsmenu>.wsmenu-list>li.wsshopmyaccount>a {
+    line-height: 60px;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {}
 
 /* Extra @Media Query*/
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) {}
 
-}
+@media only screen and (min-width:1025px) {}
 
-@media only screen and (min-width:1025px) {
-
-}
-
-@media (min-width: 1200px){
-.container {
+@media (min-width: 1200px) {
+  .container {
     max-width: 1300px;
-}
-}
-
-.form-control:focus{
-    border-color: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
+  }
 }
 
+.form-control:focus {
+  border-color: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 
 /* Fade down effects  */
 .wsmenu>.wsmenu-list>li>ul.sub-menu {
@@ -1989,10 +1994,9 @@ Extra @Media Query
 }
 
 /* Mega menu demo */
-body {
+/* body {
   background-color: #e9ebef;
-}
-
+} */
 .wrapper {
   max-width: 1550px;
   margin: 0 auto;
@@ -2271,7 +2275,6 @@ body {
 }
 
 /* ========  Color Swicher CSS ============ */
-
 .swichermainbx {
   max-width: 1200px;
   margin: 0 auto;
@@ -2447,44 +2450,53 @@ body {
 }
 
 /* End Color Swicher*/
-
 @media only screen and (min-width: 230px) and (max-width:991px) {
   .wrapper {
     width: 100%;
     margin: 0% 0%;
   }
+
   .header {
     min-height: 75px;
   }
+
   .logo {
     display: none;
   }
+
   .header {
     box-shadow: none;
     background-image: none;
   }
+
   .colorlink01 {
     width: 92%;
     margin: 0% 4%;
   }
+
   .colorlink02 {
     width: 92%;
     margin: 0% 4%;
   }
+
   .colorlink03 {
     width: 92%;
     margin: 0% 4%;
   }
+
   .buttoncolor02 {
     width: 100%;
     margin-bottom: 2%;
   }
+
   .buttoncolor {
     width: 25%;
   }
+
   .buttoncolor03 {
     width: 25%;
   }
+
   .moreoption {
     width: 100%;
     margin: 85px 0 0 0;
@@ -2494,56 +2506,70 @@ body {
     -moz-box-shadow: none;
     box-shadow: none;
   }
+
   .headtoppart {
     margin-top: 60px;
     height: auto;
     background-color: rgba(0, 0, 0, 0.2);
   }
+
   .topmenusearch {
     margin: 0px 0 0;
     width: 100%;
   }
+
   .topmenusearch input:focus {
     width: 100%;
   }
+
   .posrlt {
     width: 240px;
     float: none;
   }
+
   .headerright {
     width: 100%;
     float: none;
   }
+
   .headertopleft {
     float: none;
     width: 96%;
     margin: 0% 2%;
   }
+
   .headertopright {
     float: none;
     width: 96%;
     margin: 0% 2%;
   }
+
   .address.clearfix:before, .address.clearfix:after {
     content: "";
     display: table;
   }
+
   .address.clearfix:after {
     clear: both;
   }
+
   .address.clearfix {
     zoom: 1;
   }
+
   .headertopleft {
     display: none;
   }
+
   .headerfull {
     height: auto;
   }
+
   .headertopright a {
     width: 25%;
     text-align: center;
   }
+
   /* Color Swicher  Only */
   .swichermainbx {
     width: 96%;
@@ -2553,20 +2579,25 @@ body {
     padding: 15px 25px;
     border-radius: 14px;
   }
+
   .swichermainleft {
     width: 98%;
     margin: 1% 1%;
   }
+
   .swichermainright {
     width: 98%;
     margin: 1% 1%;
   }
+
   .wscolorcode {
     width: 12.5%;
   }
+
   .swichertxt {
     display: none;
   }
+
   .swichertxt02 span {
     display: none;
   }
