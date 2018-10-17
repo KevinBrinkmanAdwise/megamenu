@@ -1324,7 +1324,7 @@ Extra @Media Query
     margin: 0px;
     float: none;
     font-size: 12px;
-    padding: 14px 11px 14px 11px;
+    padding: 14px 11px 14px 20px;
     font-weight: bold;
   }
 
@@ -1451,7 +1451,7 @@ Extra @Media Query
     background-color: #fff;
   }
 
-  .wsmenu>.wsmenu-list>li>.wsshoptabing>.wsshopwp>.wstabitem>li>a:after {
+  :after {
     border: none;
   }
 
@@ -1479,7 +1479,7 @@ Extra @Media Query
   }
 
   .wsactive .wsmobileheader {
-    margin-left: 260px;
+    margin-left: 0px;
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
     -o-transition: all 0.25s ease-in-out;
@@ -1715,6 +1715,8 @@ Extra @Media Query
     -ms-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
     margin-left: 0;
+    position: absolute;
+    top:60px;
   }
 
   /* ================== Mobile Sub Menu Expander Arrows  ================== */
@@ -1734,7 +1736,7 @@ Extra @Media Query
     display: block;
     height: 23px;
     width: 25px;
-    margin-top: 25px;
+    margin-top: 15px;
     margin-right: 13px;
     background-size: 25px;
     font-size: 21px;
@@ -1866,7 +1868,7 @@ Extra @Media Query
   }
 
   .wsmenu>.wsmenu-list>li.normal-item>a {
-    line-height: 60px;
+    line-height: 50px;
   }
 
   .wsmenu>.wsmenu-list>li>a{
@@ -1874,11 +1876,11 @@ Extra @Media Query
   }
 
   .wsmenu>.wsmenu-list>li>.navtext {
-    line-height: 60px;
+    line-height: 50px;
   }
 
   .wsmenu>.wsmenu-list>li.wsshopmyaccount>a {
-    line-height: 60px;
+    line-height: 50px;
   }
 }
 
@@ -1897,7 +1899,7 @@ Extra @Media Query
 }
 
 .form-control:focus {
-  border-color: none;
+  border: 1px solid #efefef;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -2274,182 +2276,7 @@ Extra @Media Query
   -webkit-overflow-scrolling: touch;
 }
 
-/* ========  Color Swicher CSS ============ */
-.swichermainbx {
-  max-width: 1200px;
-  margin: 0 auto;
-}
 
-.swichermainleft {
-  width: 50%;
-  float: left;
-  margin-bottom: 25px;
-}
-
-.swichermainright {
-  width: 50%;
-  float: left;
-  margin-bottom: 25px;
-}
-
-.swichertxt02 {
-  font-size: 15px;
-  margin-bottom: 15px;
-}
-
-.wscolorcode:hover {
-  color: #fff;
-  text-decoration: none;
-}
-
-.wscolorcode {
-  width: 12.5%;
-  margin: 0px;
-  color: #fff;
-  float: left;
-  padding: 4px 12px 4px 12px;
-  margin: 0px;
-  height: 30px;
-  line-height: 22px;
-  background-color: #333;
-  font-size: 13px;
-  text-transform: uppercase;
-  text-align: center;
-  border-bottom: solid 2px #fff;
-}
-
-.wscolorcode.cblack {
-  width: 16.66%;
-}
-
-.wscolorcode.active {
-  border-bottom: solid 2px #333;
-  opacity: 1;
-}
-
-.wscolorcode.cblack.active {
-  border-bottom: solid 2px #da4b38;
-  opacity: 1;
-}
-
-.wscolorcode .fa {
-  font-size: 15px;
-  color: #fff;
-}
-
-.wscolorcode.cblue {
-  background-color: #1991eb;
-}
-
-.wscolorcode.corange {
-  background-color: #fb872b;
-}
-
-.wscolorcode.cred {
-  background-color: #d7412e;
-}
-
-.wscolorcode.cpink {
-  background-color: #eb65a0;
-}
-
-.wscolorcode.cgreen {
-  background-color: #80c133;
-}
-
-.wscolorcode.cpurple {
-  background-color: #967ADC;
-}
-
-.wscolorcode.cgry {
-  background-color: #ccc;
-}
-
-.wscolorcode.cyellow {
-  background-color: #ffd452;
-}
-
-.wscolorcode.grd-green {
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#49c4a4), to(#97b832));
-  background: -webkit-linear-gradient(left, #49c4a4, #97b832);
-  background: -moz-linear-gradient(left, #49c4a4, #97b832);
-  background: -o-linear-gradient(left, #49c4a4, #97b832);
-  background: -ms-linear-gradient(left, #49c4a4, #97b832);
-  background: linear-gradient(left, #49c4a4, #97b832);
-  background-color: #49c4a4;
-}
-
-.wscolorcode.grd-blue {
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#31c8b1), to(#4ec7ff));
-  background: -webkit-linear-gradient(left, #31c8b1, #4ec7ff);
-  background: -moz-linear-gradient(left, #31c8b1, #4ec7ff);
-  background: -o-linear-gradient(left, #31c8b1, #4ec7ff);
-  background: -ms-linear-gradient(left, #31c8b1, #4ec7ff);
-  background: linear-gradient(left, #31c8b1, #4ec7ff);
-  background-color: #4ec7ff;
-}
-
-.wscolorcode.grd-red {
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#d90647), to(#eb402c));
-  background: -webkit-linear-gradient(left, #d90647, #eb402c);
-  background: -moz-linear-gradient(left, #d90647, #eb402c);
-  background: -o-linear-gradient(left, #d90647, #eb402c);
-  background: -ms-linear-gradient(left, #d90647, #eb402c);
-  background: linear-gradient(left, #d90647, #eb402c);
-  background-color: #d90647;
-}
-
-.wscolorcode.grd-light-green {
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#29bb92), to(#69cbb0));
-  background: -webkit-linear-gradient(left, #29bb92, #69cbb0);
-  background: -moz-linear-gradient(left, #29bb92, #69cbb0);
-  background: -o-linear-gradient(left, #29bb92, #69cbb0);
-  background: -ms-linear-gradient(left, #29bb92, #69cbb0);
-  background: linear-gradient(left, #29bb92, #69cbb0);
-  background-color: #29bb92;
-}
-
-.wscolorcode.grd-pink {
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#c659a7), to(#fd67a0));
-  background: -webkit-linear-gradient(left, #c659a7, #fd67a0);
-  background: -moz-linear-gradient(left, #c659a7, #fd67a0);
-  background: -o-linear-gradient(left, #c659a7, #fd67a0);
-  background: -ms-linear-gradient(left, #c659a7, #fd67a0);
-  background: linear-gradient(left, #c659a7, #fd67a0);
-  background-color: #cc48d4;
-}
-
-.wscolorcode.grd-orange {
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ff5183), to(#ff754b));
-  background: -webkit-linear-gradient(left, #ff5183, #ff754b);
-  background: -moz-linear-gradient(left, #ff5183, #ff754b);
-  background: -o-linear-gradient(left, #ff5183, #ff754b);
-  background: -ms-linear-gradient(left, #ff5183, #ff754b);
-  background: linear-gradient(left, #ff5183, #ff754b);
-  background-color: #ff5183;
-}
-
-.wscolorcode.grd-black {
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#383d41), to(#5d6069));
-  background: -webkit-linear-gradient(left, #383d41, #5d6069);
-  background: -moz-linear-gradient(left, #383d41, #5d6069);
-  background: -o-linear-gradient(left, #383d41, #5d6069);
-  background: -ms-linear-gradient(left, #383d41, #5d6069);
-  background: linear-gradient(left, #383d41, #5d6069);
-  background-color: #5d6069;
-}
-
-.wscolorcode.grd-gry {
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#cccccc), to(#e4e4e4));
-  background: -webkit-linear-gradient(left, #cccccc, #e4e4e4);
-  background: -moz-linear-gradient(left, #cccccc, #e4e4e4);
-  background: -o-linear-gradient(left, #cccccc, #e4e4e4);
-  background: -ms-linear-gradient(left, #cccccc, #e4e4e4);
-  background: linear-gradient(left, #cccccc, #e4e4e4);
-  background-color: #cccccc;
-}
-
-/* End Color Swicher*/
 @media only screen and (min-width: 230px) and (max-width:991px) {
   .wrapper {
     width: 100%;
