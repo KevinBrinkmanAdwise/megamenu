@@ -99,13 +99,6 @@ Extra @Media Query
   padding: 0;
 }
 
-.wsmain {
-  width: 100%;
-  margin: 0 auto;
-  /* padding: 0 25px; */
-  max-width: 1300px;
-}
-
 .wsmenu {
   width: 75%;
   float: left;
@@ -1840,6 +1833,18 @@ Extra @Media Query
   border: 1px solid #e1007c;
 }
 
+.wsmain {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+.headerwp {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0px;
+}
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
   .search-input {
@@ -1848,6 +1853,20 @@ Extra @Media Query
     margin-top: 20px !important;
     margin-right: 10px !important;
   }
+  .wsmain {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 930px;
+  }
+  .headerwp{
+    max-width:930px
+  }
+  .smllogo{
+    width:20%;
+  }
+.wsmenu{
+  width:80%;
+}
 }
 
 /* Medium Devices, Desktops */
@@ -2013,11 +2032,7 @@ Extra @Media Query
   padding-top: 0;
 }
 
-.headerwp {
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 0px;
-}
+
 
 .posrlt {
   position: relative;
